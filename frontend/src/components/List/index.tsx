@@ -39,7 +39,7 @@ const List = ({
           return (
             id &&
             (deletingIds.includes(id) ? (
-              <li className={Styles.item}>
+              <li key={id} className={Styles.item}>
                 <Loader />
               </li>
             ) : (
