@@ -10,3 +10,16 @@
 * {
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(196, 196, 196); /* Color of the scrollbar thumb */
+  border-radius: 3px; /* Add a border radius to the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(136, 136, 136); /* Color of the scrollbar thumb on hover */
+}
