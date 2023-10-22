@@ -27,7 +27,7 @@ const Form = ({ onAdd, isAdding }: FormProps) => {
         className={Styles.input}
         disabled={isAdding}
       />
-      <button onClick={handleAdd} className={Styles.btn} disabled={isAdding}>
+      <button onClick={handleAdd} className={Styles.btn} disabled={!title || isAdding}>
         {isAdding ? <Loader /> : 'Add'}
       </button>
     </div>

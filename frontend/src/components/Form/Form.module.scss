@@ -25,8 +25,14 @@
   background-color: white;
   border: 1px solid rgb(61, 23, 200);
 
-  &:hover {
+  &:not(:disabled):hover {
     background-color: rgb(61, 23, 200);
     color: white;
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    border: 1px solid gray;
+    color: gray;
   }
 }
