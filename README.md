@@ -1,59 +1,96 @@
-# Digital Awesome Development Test Project
+# Todo App
 
-This isn't really a test, rather a way to get an idea of how you problem solve and develop.
+This repository contains two projects: a Laravel-based API backend and a React TypeScript frontend for a Todo app.
 
-The project should take you no more than 4 hours to complete.
+## Prerequisites
 
-## Create a branch for your code
-When you are ready to start fork this repository to your own github account `da-dev-{your_name)`
-It's a good idea to make a couple of commits during development so we can see how you are progressing.
+Before you begin working with these projects, ensure that you have the following prerequisites installed:
 
+### For the API Backend
 
-## How to submit your code for review
+- [PHP](https://www.php.net/) (Recommended version: 8 or later)
+- [Composer](https://getcomposer.org/)
+- [Laravel](https://laravel.com/docs/10.x#installation)
+- [MySQL](https://dev.mysql.com/downloads/) or a database of your choice
 
-Please commit all of your working code to your repository.
-Once you have finished creating the app and have committed your code let a team member know that your app is ready for review.
-*MAKE SURE TO SHARE A LINK TO YOUR REPOSITORY!*
+### For the React TypeScript Frontend
 
-### Make sure your app is ready for review!
-
-We should be able to pull down your completed repository, install the packages and run it locally to review.
-
-***
-
-# To-do List (Test Project)
-
-We need to create a single list to-do app.
-There is no authentication required for this app.
-
-The app should display a single to-do list. Anyone can add, remove, or mark complete items in the list.
-
-The only field a to-do list item has is a text description. That is required to add an item to the to-do list.
-
-- When someone adds an item to the list it should save it to the database.
-- When someone marks an item on the list complete it should update it in the database and show the item as marked complete.
-- When someone removes the item from the list it should soft-delete the item and remove it from the list.
+- [Node.js](https://nodejs.org/) (Recommended version: 14.x or later)
+- You can choose either [npm](https://www.npmjs.com/) or [Yarn](https://classic.yarnpkg.com/en/) for managing dependencies.
+- [React](https://reactjs.org/)
 
 
+## Project 1: API Backend (api-backend)
 
-## Scope
+The API backend is built using Laravel and provides the necessary endpoints for managing a Todo app.
 
-- [ ] I should be able to view all of the items in the to-do list.
-- [ ] I should be able to add an item to the list
-- [ ] I should be able to remove an item from the list
-- [ ] I should be able to mark an item from the list as complete
+### Features
 
-There are no design requirements for this task. You can install Tailwind or Bootstrap for basic styling if you prefer or include no styling at all. 
+- Create, Read, Update, and Delete (CRUD) operations for Todo items.
+- Validation and error handling for robust API interactions.
+
+### Getting Started
+
+To get started with the API backend, follow these steps:
+
+1. Clone this repository.
+
+```bash
+git clone https://github.com/chris14rueda/full-stack-dev-test.git
+```
+
+2. Navigate to the `api-backend` directory.
+
+```
+cd api-backend
+```
+
+3. Install the dependencies.
+```
+composer install
+```
+4. Configure your environment by creating a `.env` file. You can use the `.env.example` as a template.
+5. Generate application key.
+```
+php artisan key:generate
+```
+6. Run migrations.
+```
+php artisan migrate
+```
+7. Start the Laravel development server.
 
 
-### Technical Requirements
-- Database: Mysql or PostgreSQL
-- API backend: Laravel
-- Frontend: React.js (with typescript and React hooks)
+## Project 2: React TypeScript Frontend (frontend)
 
-****
-#### Nice to have but not required:
-- Use Repository Pattern
-- Use Laravel's APiResource for API responses
-****
-Good luck and don't hesitate to reach out if you have any questions or need clarification on the scope or requirements.
+The React TypeScript frontend is responsible for providing a user interface for interacting with the Todo app.
+
+### Getting Started
+
+1. Navigate to the `frontend` directory.
+
+```
+cd frontend
+```
+2. Install the required dependencies.
+```
+npm install
+```
+or
+```
+yarn install
+```
+3. Configure the Base API url in the `.env` file to point to your API backend.
+4. Start the development server.
+```
+npm run dev
+```
+or
+```
+yarn dev
+```
+
+
+
+
+
