@@ -23,7 +23,7 @@ const Form = ({ onAdd, isAdding }: FormProps) => {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         onKeyPress={(e) => e.key === 'Enter' && handleAdd()}
-        placeholder="Task"
+        placeholder="Enter a task"
         className={Styles.input}
         disabled={isAdding}
       />
