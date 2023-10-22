@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding: 15px 10px;
+  padding: 0;
   flex: 1;
   overflow: auto;
   max-height: 500px;
@@ -18,14 +18,19 @@
   align-items: center;
   padding: 10px 15px;
   min-height: 50px;
-  border-bottom: 1px solid rgb(215, 215, 215);
-  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(235, 235, 235);
   &.completed {
     text-decoration: line-through;
   }
+  overflow: hidden;
 
   &:last-child {
     border-bottom: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(244, 244, 244);
   }
 }
 
@@ -40,15 +45,15 @@
   border-radius: 8px;
   overflow: hidden;
   margin-right: 5px;
-  background-color: white;
+  background-color: transparent;
 
   &:last-child {
     margin-right: 0;
   }
 
   &:hover {
-    border-color: transparent;
-    background-color: rgb(231, 231, 231);
+    border-color: rgb(61, 23, 200);
+    background-color: white;
   }
 }
 
