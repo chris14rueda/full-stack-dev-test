@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  background: rgb(172, 55, 254);
+  background: linear-gradient(
+    79deg,
+    rgba(172, 55, 254, 1) 12%,
+    rgba(138, 35, 224, 1) 41%,
+    rgba(106, 21, 215, 1) 85%
+  );
+  padding: 10px 15px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+}

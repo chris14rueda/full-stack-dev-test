@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  background-color: rgb(244, 244, 244);
+  padding: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 3px 12px;
+  border: 1px solid rgb(138, 137, 137);
+  margin-right: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+
+  &:focus {
+    outline: none;
+    border: 1px solid rgb(61, 23, 200);
+  }
+}
+
+.btn {
+  min-width: 90px;
+  background-color: white;
+  border: 1px solid rgb(61, 23, 200);
+
+  &:hover {
+    background-color: rgb(224, 224, 224);
+  }
+}
