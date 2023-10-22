@@ -1,0 +1,12 @@
+.container {
+  box-sizing: border-box;
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(242, 242, 242);
+  padding: 25px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
