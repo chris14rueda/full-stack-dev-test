@@ -6,9 +6,11 @@
   flex: 1;
   overflow: auto;
   max-height: 500px;
-  min-height: 450px;
+  min-height: 500px;
   box-sizing: border-box;
   margin: 0;
+  // align-items: center;
+  // justify-content: center;
 }
 
 .item {
@@ -72,4 +74,12 @@
   &:focus {
     outline: none;
   }
+}
+
+.fullLoader {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
 }

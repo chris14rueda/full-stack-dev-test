@@ -11,6 +11,7 @@ interface ListProps {
   data: Task[];
   hasMore: boolean;
   isAdding: boolean;
+  isLoading: boolean;
   deletingIds: number[];
   updatingIds: number[];
   onDelete: (id: number | undefined) => void;
@@ -22,6 +23,7 @@ const List = ({
   data = [],
   hasMore = false,
   isAdding,
+  isLoading,
   onComplete,
   onDelete,
   onLoadMore,
@@ -58,6 +60,10 @@ const List = ({
             ))
           );
         })
+      ) : isLoading ? (
+        <div className={Styles.fullLoader}>
+          <Loader />
+        </div>
       ) : (
         <div className={Styles.empty}>No task</div>
       )}

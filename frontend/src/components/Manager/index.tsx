@@ -10,6 +10,7 @@ import Header from '../Header';
 const Manager = () => {
   const {
     loadTasks,
+    isLoading,
     tasks,
     addTask,
     deleteTask,
@@ -40,6 +41,7 @@ const Manager = () => {
       <Header />
       <List
         data={tasks}
+        isLoading={isLoading}
         isAdding={isAdding}
         hasMore={hasMore}
         deletingIds={deletingIds}
