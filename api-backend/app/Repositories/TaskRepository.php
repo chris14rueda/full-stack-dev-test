@@ -10,7 +10,7 @@ class TaskRepository implements TaskRepositoryInterface
 {
     public function all(int $perPage = 25)
     {
-        return Task::paginate($perPage);
+        return Task::orderBy('id', 'desc')->paginate($perPage);
     }
 
     public function find($id)
